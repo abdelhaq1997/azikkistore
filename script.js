@@ -6,8 +6,8 @@ const products = [
         type: 'perfume',
         price: 299.00,
         images: [
-            'images/khamrah.jpg', // المسار الصحيح
-            'images/kalemat.jpg'  // المسار الصحيح
+            './images/khamrah.jpg', // المسار المصحح
+            './images/kalemat.jpg'  // المسار المصحح
         ],
         description_ar: "عطر شرقي فاخر يجمع بين نفحات العود، العنبر، والفانيليا. رائحة غنية تدوم طويلاً وتمنحك حضورًا مميزًا.",
         bestseller: true
@@ -18,8 +18,8 @@ const products = [
         type: 'perfume',
         price: 249.00,
         images: [
-            'images/ihsas.webp', // المسار الصحيح
-            'images/arab.jpg'  // المسار الصحيح
+            './images/ihsas.webp', // المسار المصحح
+            './images/arab.jpg'  // المسار المصحح
         ],
         description_ar: "مزيج ساحر من المسك والورد والياسمين. يجسد الأناقة العربية الأصيلة ويترك انطباعًا لا يُنسى.",
         bestseller: true
@@ -30,8 +30,8 @@ const products = [
         type: 'watch',
         price: 349.00,
         images: [
-            'images/watch1.jpg', // المسار الصحيح
-            'images/images.jpeg' // المسار الصحيح
+            './images/watch1.jpg', // المسار المصحح
+            './images/images.jpeg' // المسار المصحح
         ],
         description_ar: "ساعة رجالية أنيقة بتصميم كلاسيكي، مصنوعة من الفولاذ المقاوم للصدأ ومزودة بحزام جلدي فاخر.",
         bestseller: true
@@ -42,8 +42,8 @@ const products = [
         type: 'watch',
         price: 319.00,
         images: [
-            'images/watch2.jpeg', // المسار الصحيح
-            'images/asad2.webp' // المسار الصحيح
+            './images/watch2.jpeg', // المسار المصحح
+            './images/asad2.webp' // المسار المصحح
         ],
         description_ar: "ساعة نسائية فاخرة بتصميم رقيق وعصري، مرصعة بالكريستال اللامع ومناسبة لكل المناسبات.",
         bestseller: false
@@ -52,9 +52,9 @@ const products = [
 
 // روابط صور السلايدر
 const heroImages = [
-    'images/khamrah.jpg',  // المسار الصحيح
-    'images/watch1.jpg',   // المسار الصحيح
-    'images/ihsas.webp'    // المسار الصحيح
+    './images/khamrah.jpg',  // المسار المصحح
+    './images/watch1.jpg',   // المسار المصحح
+    './images/ihsas.webp'    // المسار المصحح
 ];
 
 // المتغيرات الرئيسية
@@ -170,7 +170,7 @@ function renderHomepage() {
         <section class="py-16 bg-white">
             <div class="container mx-auto px-4">
                 <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">الأكثر مبيعاً</h2>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     ${bestsellers.map(p => createProductCard(p)).join('')}
                 </div>
             </div>
