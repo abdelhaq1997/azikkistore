@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AzikiStore | متجر العطور والساعات الفاخرة</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <div class="bg-amber-900 text-white text-center py-2 text-sm font-semibold">
+        شحن مجاني عند الطلب بأكثر من 300 درهم مغربي!
+    </div>
+
+    <header class="sticky top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-sm shadow-md p-4">
+        <div class="container mx-auto flex items-center justify-between">
+            <div class="flex items-center">
+                <div class="font-serif text-3xl font-bold text-amber-900 logo-text">AzikiStore</div>
+                <nav class="hidden md:flex space-x-8 mr-8" id="nav-menu">
+                    <button data-page="home" class="nav-btn text-lg hover:text-amber-700 transition-colors">الرئيسية</button>
+                    <button data-page="shop" class="nav-btn text-lg hover:text-amber-700 transition-colors">المتجر</button>
+                    <button data-page="about" class="nav-btn text-lg hover:text-amber-700 transition-colors">من نحن</button>
+                </nav>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button id="cart-button" class="relative p-2 rounded-full hover:bg-gray-100 transition-colors">
+                    <i class="fas fa-shopping-cart text-gray-800 text-xl"></i>
+                    <span id="cart-count" class="absolute top-0 right-0 transform translate-x-1/2 -translate-y-1/2 flex items-center justify-center h-5 w-5 rounded-full bg-amber-700 text-xs text-white">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="mt-0">
+        <div id="page-content" class="min-h-screen">
+            </div>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 text-right">
+            <div>
+                <h3 class="font-serif text-2xl font-bold text-amber-700 mb-4">AzikiStore</h3>
+                <p class="text-sm">أفخم العطور والساعات الشرقية بنكهة عربية أصلية وجودة عالية.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold text-lg mb-4">روابط سريعة</h4>
+                <ul>
+                    <li class="mb-2"><button data-page="about" class="hover:text-amber-500">من نحن</button></li>
+                    <li class="mb-2"><a href="#" class="hover:text-amber-500">شروط الاستخدام</a></li>
+                    <li class="mb-2"><a href="#" class="hover:text-amber-500">سياسة الخصوصية</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold text-lg mb-4">تواصل معنا</h4>
+                <p class="text-sm">واتساب: +212 642-163643</p>
+                <p class="text-sm">البريد الإلكتروني: info@azikistore.com</p>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold text-lg mb-4">تابعنا</h4>
+                <div class="flex justify-end space-x-4 text-gray-300 text-2xl">
+                    <a href="https://www.facebook.com/simo.moche.90" target="_blank" rel="noopener noreferrer" class="hover:text-amber-500"><i class="fab fa-facebook"></i></a>
+                    <a href="https://wa.me/212642163643" target="_blank" rel="noopener noreferrer" class="hover:text-amber-500"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <a href="https://wa.me/212642163643?text=السلام عليكم، أرغب في معرفة تفاصيل أكثر عن منتجاتكم في AzikiStore." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="تواصل معنا عبر واتساب">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <p id="modal-message" class="text-lg"></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
